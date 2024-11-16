@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    transition: transform 0.5s;
+}
+
+#game:hover {
+    transform: scale(1.03);
+}
+
+header h1 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+#customizeButton {
+    padding: 10px 15px;
+    margin: 10px 0;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#customizeButton:hover {
+    background-color: #28a745;
+}
+
+#customizationPanel {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.accessoryButton {
+    background-color: #28a745;
+    color: white;
+}
+
+.accessoryButton:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+/* Basic Styling for All Images */
+img {
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto;    /* Maintains aspect ratio */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds animation on hover */
+}
+
+/* Add Hover Effects */
+img:hover {
+    transform: scale(1.05); /* Slightly zooms in on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+}
+
+/* Style Specific Images (Based on ID) */
+#petImage {
+    width: 300px; /* Fixed width for the pet image */
+    height: auto; /* Maintain aspect ratio */
+    border: 3px solid #ffcc00; /* Adds a custom border */
+    margin: 20px auto; /* Centers the image */
+    display: block; /* Ensures centering works */
+}
+
+/* Add Background Color and Padding Around Image */
+.customization-panel img {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 50%; /* Makes the image circular */
+    display: inline-block;
+}
+
+/* Responsive Styling for Small Screens */
+@media (max-width: 768px) {
+    img {
+        width: 100%; /* Ensures images scale down for smaller screens */
+        max-width: none;
+    }
+
+    #petImage {
+        width: 200px; /* Smaller width for pet image on small screens */
+    }
+}
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual PC Pet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <header>
+            <h1>My Virtual PC Pet</h1>
+            <button id="customizeButton">Customize Pet</button>
+        </header>
+
+        <div id="status">
+            <img id="petImage" src="https://e7.pngegg.com/pngimages/227/230/png-clipart-pug-my-virtual-pet-dog-my-talking-dog-virtual-pet-virtual-pet-game-android-mammal-carnivoran-thumbnail.png" alt="Your Pet" alt="Your Pet">
+            <p>Hunger: <meter id="hungerMeter" value="50" min="0" max="100"></meter></p>
+            <p>Happiness: <meter id="happinessMeter" value="50" min="0" max="100"></meter></p>
+            <p>Cleanliness: <meter id="cleanlinessMeter" value="50" min="0" max="100"></meter></p>
+            <p>Energy: <meter id="energyMeter" value="50" min="0" max="100"></meter></p>
+            <p>Health: <meter id="healthMeter" value="50" min="0" max="100"></meter></p>
+        </div>
+
+        <div id="actions">
+            <button id="feedButton">Feed</button>document.addEventListener("DOMContentLoaded", () => {
+            <button id="playButton">Play</button>
+            <button id="cleanButton">Clean</button>
+            <button id="restButton">Rest</button>
+        </div>
+
+        <div id="customizationPanel">
+            <h2>Customize Your Pet</h2>
+            <div id="accessoryOptions">
+                <p>Choose Accessory:</p>
+                <button id="hatButton">Put on Hat</button>
+                <button id="scarfButton">Put on Scarf</button>
+                <button id="glassesButton">add glasses</button>  
+                <button id="defaultButton">Remove Accessories</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
